@@ -1,0 +1,19 @@
+body {
+    background: #fefefe;
+}
+
+h2{
+color: #1460AA;
+} 
+
+.header1{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.header2{
+    font-size: 30px;
+}
+
+.textDecor{
+    font-size: 25px;
+}
