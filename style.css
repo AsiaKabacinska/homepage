@@ -1,19 +1,29 @@
 body {
-    background: #fefefe;
+  background: #fefefe;
 }
 
-h2{
-color: #1460AA;
-} 
-
-.header1{
-    font-size: 35px;
-    text-transform: uppercase;
-}
-.header2{
-    font-size: 30px;
+.heading2 {
+  color: #1460aa;
+  font-size: 30px;
 }
 
-.textDecor{
-    font-size: 25px;
+.header1 {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.text {
+  font-size: 25px;
+}
+.heading1{
+    font-size: 40px;
+    color: red;
+}
+.navigation {
+    border: 2px solid red;
+    font-size:25px;
+    text-decoration: none;
+    color: slateblue;
+}
+.navigation__secondPage{
+    margin-right:10px;
 }
