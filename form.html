@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Forms playground</h1>
+        <form method = "POST" action="https://dev.cotenfrontend.pl" class="form">
+            <p>
+                <label for='firstName'>Your name:</label>
+                <input class="form__item" placeholder="Wpisz swoje imię" id="firstName" name="firstName">
+            </p>
+            <p></p>
+                <riddle></riddle>
+            </p>
+            <p>
+                <label>Your last name: </label>
+                <input placeholder="Wpisz swoje nazwisko" id="lastName" name="lastName">
+           
+            </p>
+            <p>
+                <label>Ulubiony numer: </label>
+                <input  class="form__item" placeholder="Wpisz numer" 
+                 id="favNumber"
+                 name="favNumber"
+                 type="number"
+                 />  
+               
+            </p>
+
+            <p>
+                <label>Numer telefonu: </label>
+                <input  class="form__item" placeholder="Wpisz numer telefonu" 
+                 id="phoneNumber"
+                 name="phoneNumber"
+                 type="tel"
+                 />
+            </p>
+           
+            <p>
+                <label>Email: </label>
+                <input class="form__item" placeholder="Wpisz asdres e-mail" 
+                 id="email"
+                 name="email"
+                 type="email"
+                 />
+            </label>
+            </p>
+
+            <fieldset>
+                <legend>Address</legend>
+
+                <p>
+                    <label>Nazwa ulicy</label>
+                    <input  class="form__item"
+                     class="form__item"
+                     placeholder="Wpisz nazwę ulicy"
+                     name="streetName">
+                </p>
+                <p>
+                    <label>Miasto</label>
+                    <input  class="form__item"
+                     placeholder="Wpisz nazwę miasta"
+                     name="city">
+                </p>
+
+                <p>
+                    <label>Range</label>
+                    <input  class="form__item"
+                     id="range"
+                     name="range"
+                     type="range"
+                     min="0"
+                     max="100"
+                     step="10"
+                     >
+                </p>
+                <p>
+                    <label>Hasło</label>
+                    <input  class="form__item"
+                     id="password"
+                     placeholder="Wpisz swoje hasło"
+                     name="password"
+                     type="password"
+                     >
+                </p>
+                <p>
+                    <label>Dodaj plik:</label>
+                    <input  class="form__item"
+                     class="form__item"
+                     id="file"
+                     name="file"
+                     type="file"
+                     >
+                </p>
+
+                <p>
+                    <label>Twoja historia:</label>
+                    <textarea name="yourStory" id="yourStory" cols="30" rows="10">My story is...
+                    </textarea>
+                     >
+                </p>
+
+                <p>
+                    <label class="band">Twój ulubiony zespół:</label>
+                    <select name="" id="band">
+                    <option value="band1">Queen</option>
+                    <option value="band2">Metallica</option>
+                    <option value="band3">Nirvana</option>
+                    </select>
+                </p>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Ulubiony smak lodów</legend>
+                <p>
+                <label><input type="radio" name="lody"value="czekolada">Czekoladowy</label>
+               </p>
+               <p>
+                <label><input type="radio" name="lody"value="truskawkowy">Truskawkowy</label>
+               </p>
+               <p>
+                <label><input type="radio" name="lody"value="waniliowy">Waniliowy</label>
+               </p>
+               <p>
+                <label><input type="radio" name="lody"value="bakaliowy">Bakaliowy</label>
+               </p>
+            </fieldset>
+            <p>
+                <label for=""><input name="zgoda" type="checkbox"value="agree">Zgadzam się</label>
+            </p>
+
+            <p>
+                <input type="submit"value="Send"/>
+            </p>
+
+        </form>
+    </main>
+    
+</body>
+</html>

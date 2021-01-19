@@ -3,32 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <nav class="navigation">
-        <a class="navigation__secondPage" href="second.html">SECOND</a>
-        <a class="navigation__thirdPage" href="third.html">THIRD</a>
+      <nav class="navigation navigation--js">
+        <a class="navigation__link" href="second.html">Nauka JS</a>
+        <a class="navigation__link" href="third.html">Nauka CSS-a</a>
+        <a class="navigation__link" href="second.html">Nauka JS</a>
+        <a class="navigation__link" href="third.html">Nauka CSS-a</a>
       </nav>
+      <button class="hamburger hamburger--js">menu</button>
     </header>
-    <main>
-      <header>
-        <h1 class="heading1">Asia Kabacińska</h1>
+    <main class="main">
+      <header class="main__header">
+        <h1 class="main__header--heading1">Asia Zielińska</h1>
+        <h1 class ="main__header--heading1js"></h1>
       </header>
-      <section>
-        <h2 class="heading2">Kim jestem?</h2>
-        <img class = "heading2__photo" src="asia (1).jpg" alt="" />
-        <p class="heading2__text">
+      <section class="about">
+        <h2 class="about__heading2">Kim jestem?</h2>
+        <img class = "about__photo" src="asia (1).jpg" alt="" />
+        <p class="about__text">
           Hej ! Do tej pory byłam logopedą, jestem pasjonatką fotografii oraz
           rozwoju osobistego i duchowego :) Aktualnie jestem na etapie
           przebranżawiania się i uczę się na programistkę frontend :)
         </p>
       </section>
-      <section>
-        <h2 class="heading2">Pierwsza praca domowa</h2>
-        <p class="heading2__text">
+      <div class="grid">
+      <section class="homework">
+        <h2 class="homework__heading2">Pierwsza praca domowa</h2>
+        <p class="homework__text">
           to stworzenie tego artykułu i notatek z kursu uczę się tworzyć plik
           html, znaczników i mam sprawdzić ten tekst za pomocą Validatora,
           następnie dodać style w homepage utworzyć plik style.css, następnie
@@ -39,9 +45,9 @@
           zmienić treść żywej strony - "Zrób komuś kawał":).
         </p>
       </section>
-      <section>
-        <h2 class="heading2">Druga praca domowa</h2>
-        <p class="heading2__text">
+      <section class="homework">
+        <h2 class="homework__heading2">Druga praca domowa</h2>
+        <p class="homework__text">
           Założyć tablicę na trello i wrzucać tam pracę domowe oraz śledzić swój
           postęp. Rozbudować homepage ( W homepage stworzyć kolejne pliki, do
           każdego pliku dodać jakieś zdjęcie, stworzyć nawigację pomiędzy
@@ -52,21 +58,92 @@
           labirynt w terminalu udostępnionym przez Korsana.
         </p>
       </section>
-      <section>
-        <h2 class="heading2">Trzecia praca domowa</h2>
-        <p class="heading2__text">
+      <section class="homework">
+        <h2 class="homework__heading2">Trzecia praca domowa</h2>
+        <p class="homework__text">
         1.Założyć konto na gitHubie, 
-        2.wrzucić projekt homepage na githuba(założyć repozytorium lokalne),
+        2.Wrzucić projekt homepage na githuba(założyć repozytorium lokalne),
         3.Zacznij commitować zmiany,
-        4. dostosuj style tak, aby ograniczyć szerokość treści i ją wyśrodkuj
+        4.Dostosuj style tak, aby ograniczyć szerokość treści i ją wyśrodkuj
         (np.na main użyć szerokości nie większej niż 1000px).
         5.Dostosuj projekt homepage do BEM.
-        6.Stwórz pusty elementz wybraną klasą i uzupełnij go za pomocą JS.
+        6.Stwórz pusty element z wybraną klasą i uzupełnij go za pomocą JS.
         </p>
       </section>
+      <section class="homework">
+        <h2 class="homework__heading2">Czwarta praca domowa</h2>
+        <p class="homework__text">
+        1.Utwórz funkcję powitalną jako parametr niech przymuje imię i wiek.
+        2. "Potnij wizytówkę" Załóż osobiste repozytorium.
+        3.wyśrodkuj linki w nawikacji za pomocą flexboxa.
+        4.Stwórz gradient i dodaj go jako tło do strony.
+        5. Przejdź flexbox froggsy. 
+        </p>
+      </section>
+      <section class="homework">
+        <h2 class="homework__heading2">Piąta praca domowa</h2>
+        <p class="homework__text">
+        1.Dodaj grid na swojej stronie.
+        2.Dodaj responsywność do swojej strony(media queries)
+        3.Dodaj do nawigacji na stronie 'hamburgera'
+        4.Uruchom github pages w repozytorium ze swoją stroną/wizytówką
+        5.Przejdź grid graden 
+        6.Stwórz nowy projekt z prostym formularzem, action:"https://dev.cotenfrontend.pl"
+        potestuj różne typy inputów i zobacz co jest przesyłane.
+        Bonus:Stwórz 2 pola name oraz riddle. Jako wartość riddle wpisz cotenfrontend wartość 
+        name to Twoje imię. Wyślij taki formularz metodą post pod podany wyżej action.
+       
+        </p>
+      </section>
+    </div>
     </main>
     <script>
-      alert("Hejka Ziomki na mojej stronie!");
-    </script>
+      // alert("Hejka Ziomki na mojej stronie!");
+
+      // const heading = document.querySelector('.main__header--heading1js');
+      // heading.innerHTML='Asia Zielińska';
+      // function calculate(myNumber) {
+      //   return myNumber*7
+
+// FUNKCJA PRACA DOMOWA 
+      //   const name = 'Asia';
+      //   const age = 29;
+
+      //   function greet(name,age){
+      //     console.log (
+      //       `Witaj ! Mam na imię ${name} i mam ${age} lat.`
+      //     );
+      //     return(name,age)
+      //   }
+      // greet(name,age);
+
+      // to samo funckja strzałkowa
+
+      const name = 'Asia';
+      const age = 29;
+
+      const greet = (name,age) =>{
+        console.log (
+          `Witaj! Mam na imię ${name} i mam ${age} lat`
+        );
+        // return(name,age);
+      }
+      greet(name,age);
+
+
+
+      const hamburger = document.querySelector('.hamburger--js');
+
+      hamburger.addEventListener('click', () => {
+        const nav = document.querySelector('.navigation--js');
+        nav.classList.toggle('navigation--open');
+      })
+
+      </script>
+      <footer class="footer">
+      Strona domowa Asi Zielińskiej, wszystkie treści są efektem nauki kursu 
+      WTF: Co ten frontend <a class = "footer_link"href="#top">Wróć na górę strony</a>
+
+    </footer>
   </body>
 </html>
