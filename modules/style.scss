@@ -1,7 +1,9 @@
+@import "modules/week-summary.scss";
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css";
+
 html {
   box-sizing: border-box;
 }
-
 *,
 *:before,
 *:after {
@@ -9,84 +11,78 @@ html {
 }
 
 body {
-  background: #833ab4;
-  background: linear-gradient(90deg, #833ab4 0%, #fdb31d 50%, #fcb045 100%);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 179, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
 }
 
 .navigation {
   padding: 16px;
   display: none;
+  &__link {
+    display: block;
+    margin: 0 0 16px;
+  }
+  &--open {
+    display: block;
+  }
+  &__secondPage {
+    margin-right: 10px;
+  }
 }
-
-.navigation__link {
-  display: block;
-  margin: 0 0 16px;
-}
-
-.navigation--open {
-  display: block;
-}
-
-.navigation__secondPage {
-  margin-right: 10px;
-}
-
 .main {
   max-width: 1000px;
   margin: 60px auto 0;
+  &__header--heading1 {
+    font-size: 40px;
+    color: rgba(253, 179, 29, 1);
+    display: flex;
+    text-align: center;
+    &--heading1:before {
+      content: "Hello!";
+    }
+  }
 }
-
-.main__header--heading1 {
-  font-size: 40px;
-  color: #fdb31d;
-  display: flex;
-  text-align: center;
-}
-
-.main__header--heading1:before {
-  content: "Hello!";
-}
-
 .about__heading2 {
   font-size: 30px;
-  color: #833ab4;
+  color: rgba(131, 58, 180, 1);
+  &:before {
+    content: ":-)";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    color: blueviolet;
+    border-radius: 50%;
+  }
 }
-
-.about__heading2:before {
-  content: ":-)";
-}
-
 .about__text {
   font-size: 30px;
 }
-
 .about__photo {
   display: block;
   max-width: 100%;
 }
-
 .homework__heading2 {
-  color: #833ab4;
+  color: rgba(131, 58, 180, 1);
   font-size: 30px;
 }
-
 .header1 {
   font-size: 35px;
   text-transform: uppercase;
 }
-
 .text {
   font-size: 25px;
 }
-
 img {
   margin-top: 10px;
 }
-
 .main__header--heading1js {
   color: blue;
 }
-
 .hamburger {
   position: absolute;
   top: 16px;
@@ -108,8 +104,7 @@ img {
     grid-gap: 16px;
   }
 }
-
-@media screen and (min-width: 1024px) {
+@media screen and(min-width: 1024px) {
   body {
     background: rgb(63, 168, 251);
     background: radial-gradient(
