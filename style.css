@@ -9,8 +9,8 @@ html {
 }
 
 body {
-  background: #833ab4;
-  background: linear-gradient(90deg, #833ab4 0%, #fdb31d 50%, #fcb045 100%);
+  background: red;
+  /* background: linear-gradient(90deg, #833ab4 0%, #fdb31d 50%, #fcb045 100%); */
 }
 
 .navigation {
